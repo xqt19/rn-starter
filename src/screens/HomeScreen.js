@@ -1,15 +1,47 @@
 import React from "react";
-import { Text, StyleSheet } from "react-native";
+import { Text, StyleSheet, View, Button, TouchableOpacity } from "react-native";
 
-const HomeScreen = () => {
+const HomeScreen = (props) => {
   return (
-    <Text style={styles.text}>blablabla!!!!!</Text>
+    <View>
+      <Text style={styles.text}>Home Screen</Text>
+      <Button 
+        title="Go to Components Demo"
+        onPress={()=>{props.navigation.navigate('Component')}}
+      />
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('List')}}>
+        <Text style={styles.touchStyle}>Go to List Demo</Text>
+        <Text style={styles.touchStyle}>Go to List Demo</Text>
+        <Text style={styles.touchStyle}>Go to List Demo</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('Image')}}>
+        <Text style={styles.touchStyle}>Go to Image Demo</Text>
+        <Text style={styles.touchStyle}>Go to Image Demo</Text>
+        <Text style={styles.touchStyle}>Go to Image Demo</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('Counter')}}>
+        <Text style={styles.touchStyle}>Go to Counter Demo</Text>
+        <Text style={styles.touchStyle}>Go to Counter Demo</Text>
+        <Text style={styles.touchStyle}>Go to Couner Demo</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('Colour')}}>
+        <Text style={styles.touchStyle}>Go to Colour Demo</Text>
+        <Text style={styles.touchStyle}>Go to Colour Demo</Text>
+        <Text style={styles.touchStyle}>Go to Colour Demo</Text>
+      </TouchableOpacity>
+    </View>
   )
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    fontStyle: "italic",
+    textAlign: "center"
+  },
+  touchStyle:{
+    fontSize:25,
+    textAlign: "center"
   }
 });
 
