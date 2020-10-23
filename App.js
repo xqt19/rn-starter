@@ -3,15 +3,22 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from "./src/screens/HomeScreen";
 import ComponentScreen from './src/screens/ComponentScreen'
 import ListScreen from './src/screens/ListScreen'
+import ImageScreen from './src/screens/ImageScreen'
+import CounterScreen from './src/screens/CounterScreen';
+import ColourScreen from './src/screens/ColourScreen';
 
 const navigator = createStackNavigator(
   {
     Home: HomeScreen,
     Component: ComponentScreen,
-    List: ListScreen
+    List: ListScreen,
+    Image: ImageScreen,
+    Counter: CounterScreen,
+    Colour: ColourScreen
+    
   },
   {
-    initialRouteName: "List",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "Best React Native App Lmao"
     }
