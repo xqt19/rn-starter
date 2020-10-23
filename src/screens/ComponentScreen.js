@@ -1,15 +1,28 @@
 import React, {Component} from 'react'
-import {Text, StyleSheet} from 'react-native'
+import {Text, StyleSheet,View} from 'react-native'
+
+//this const cant access the styles.nameStyle for some reason
+const name = "Stephen"
+
 
 const ComponentScreen =()=>{
     return(
-        <Text style ={styles.textStyle}>Hello World! This is the ComponentScreen</Text>
+        <View>
+            <Text style ={styles.textStyle}>Getting started with React Native!</Text>
+            <Text style={styles.nameStyle}>My name is {name}</Text>
+            <Text>Learn more at: 
+                https://cognizant.udemy.com/course/the-complete-react-native-and-redux-course/learn/lecture/15706432#overview
+            </Text>
+        </View>
     )
 }
 
 const styles = StyleSheet.create({
     textStyle: {
-        fontSize: 30
+        fontSize: 45
+    },
+    nameStyle:{
+        fontSize: 20
     }
 })
 
