@@ -5,8 +5,12 @@ const ColourCounter = (props) => {
     return(
         <View>
             <Text style={styles.headerStyle}>{props.hue}</Text>
-            <Button title={`Increase ${props.hue}`} onPress={()=>{props.function(props.value+20)} }/>
-            <Button title={`Decrease ${props.hue}`} onPress={()=>{props.function(props.value-20)} } />
+            <Button title={`Increase ${props.hue}`} onPress={()=>{
+                if (props.value + 20 < 255){props.function(props.value+20)}
+                } }/>
+            <Button title={`Decrease ${props.hue}`} onPress={()=>{
+                if (props.value - 20 >= 0){props.function(props.value-20)}
+                } } />
         </View>
     
     )
