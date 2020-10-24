@@ -29,6 +29,11 @@ const HomeScreen = (props) => {
         <Text style={styles.touchStyle}>Go to Colour Demo</Text>
         <Text style={styles.touchStyle}>Go to Colour Demo</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('Square')}}>
+        <Text style={styles.touchStyle}>Go to Changing Square</Text>
+        <Text style={styles.touchStyle}>Go there</Text>
+        <Text style={styles.touchStyle}>Go there</Text>
+      </TouchableOpacity>
     </View>
   )
 };
