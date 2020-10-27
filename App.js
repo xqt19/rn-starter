@@ -9,6 +9,8 @@ import ColourScreen from './src/screens/ColourScreen';
 import SquareScreen from './src/screens/SquareScreen';
 import SquareScreenWReducer from './src/screens/SquareScreenWReducer';
 import CounterScreenWReducer from './src/screens/CounterScreenWReducer';
+import TextScreen from './src/screens/TextScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 const navigator = createStackNavigator(
   {
@@ -20,7 +22,9 @@ const navigator = createStackNavigator(
     Colour: ColourScreen,
     Square: SquareScreen,
     SquareReducer: SquareScreenWReducer,
-    CounterReducer: CounterScreenWReducer
+    CounterReducer: CounterScreenWReducer,
+    Text: TextScreen,
+    Box: BoxScreen
     
   },
   {

@@ -11,38 +11,30 @@ const HomeScreen = (props) => {
       />
       <TouchableOpacity onPress={()=>{props.navigation.navigate('List')}}>
         <Text style={styles.touchStyle}>Go to List Demo</Text>
-        <Text style={styles.touchStyle}>Go to List Demo</Text>
-        <Text style={styles.touchStyle}>Go to List Demo</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{props.navigation.navigate('Image')}}>
-        <Text style={styles.touchStyle}>Go to Image Demo</Text>
-        <Text style={styles.touchStyle}>Go to Image Demo</Text>
         <Text style={styles.touchStyle}>Go to Image Demo</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{props.navigation.navigate('Counter')}}>
         <Text style={styles.touchStyle}>Go to Counter Demo</Text>
-        <Text style={styles.touchStyle}>Go to Counter Demo</Text>
-        <Text style={styles.touchStyle}>Go to Couner Demo</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{props.navigation.navigate('Colour')}}>
-        <Text style={styles.touchStyle}>Go to Colour Demo</Text>
-        <Text style={styles.touchStyle}>Go to Colour Demo</Text>
         <Text style={styles.touchStyle}>Go to Colour Demo</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{props.navigation.navigate('Square')}}>
         <Text style={styles.touchStyle}>Go to Changing Square</Text>
-        <Text style={styles.touchStyle}>Go there</Text>
-        <Text style={styles.touchStyle}>Go there</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{props.navigation.navigate('SquareReducer')}}>
         <Text style={styles.touchStyle}>Go to Changing Square W Reducer</Text>
-        <Text style={styles.touchStyle}>Go there</Text>
-        <Text style={styles.touchStyle}>Go there</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>{props.navigation.navigate('CounterReducer')}}>
         <Text style={styles.touchStyle}>Go to CounterScreen W Reducer</Text>
-        <Text style={styles.touchStyle}>Go there</Text>
-        <Text style={styles.touchStyle}>Go there</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('Text')}}>
+        <Text style={styles.touchStyle}>Go to TextScreen</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('Box')}}>
+        <Text style={styles.touchStyle}>Go to Box Screen</Text>
       </TouchableOpacity>
     </View>
   )
