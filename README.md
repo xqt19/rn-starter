@@ -10,3 +10,7 @@ https://udemy.com/course/the-complete-react-native-and-redux-course/learn/lectur
 Also checkout the guide to markups [here](https://guides.github.com/features/mastering-markdown/)
 
 Happy `hacking` !
+
+- XQT
+**El Otoño de La Mariposa**
+October 2020 
