@@ -1,5 +1,5 @@
 import React, {useReducer} from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, StyleSheet, Button} from 'react-native'
 import ColourCounterWReducer from '../components/ColourCounterWReducer'
 
 const COLOUR_INCREMENT= 15;
@@ -9,22 +9,24 @@ const reducer = (state,action) =>{
     //action = {colourToChange: 'red' || 'green' || 'blue', amount: 15|| -15 }
     switch (action.colourToChange){
         case 'red':
-            if (state.red + action.amount >= 0 && state.red + action.amount <= 255){
-                return {...state, red: state.red + action.amount }
-            }
-            return state
+            //ternary
+            return (state.red + action.amount >= 0 && state.red + action.amount <= 255)
+            ? {...state, red: state.red + action.amount }
+            : state
             
         case 'green':
-            if (state.green + action.amount >= 0 && state.green + action.amount <= 255){
-                return {...state, green: state.green + action.amount }
-            }
-            return state
+            return (state.green + action.amount >= 0 && state.green + action.amount <= 255)
+            ? {...state, green: state.green + action.amount }
+            : state
 
         case 'blue':
-            if (state.blue + action.amount >= 0 && state.blue + action.amount <= 255){
-                return {...state, blue: state.blue + action.amount }
-            }
-            return state
+            return (state.blue + action.amount >= 0 && state.blue + action.amount <= 255)
+            ? {...state, blue: state.blue + action.amount }
+            : state
+        case 'black':
+            return {blue: 0, green: 0, red: 0 }
+        case 'white':
+            return {blue: 255, green: 255, red: 255 }
 
         default:
             return state
@@ -56,6 +58,8 @@ const SquareScreenWReducer = () => {
             <Text style={styles.headerStyle}>
                 ({`${state.red},${state.green},${state.blue}`})
             </Text>
+            <Button title="Back to Black" onPress={()=>{ dispatch({colourToChange:'black'}) }} />
+            <Button title="Go White" onPress={()=>{ dispatch({colourToChange:'white'}) }} />
 
             
         </View>
