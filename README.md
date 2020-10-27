@@ -12,5 +12,7 @@ Also checkout the guide to markups [here](https://guides.github.com/features/mas
 Happy `hacking` !
 
 - XQT
-`*El Otoño de La Mariposa*`
+
+*El Otoño de La Mariposa*
+
 October 2020
