@@ -11,8 +11,4 @@ Also checkout the guide to markups [here](https://guides.github.com/features/mas
 
 Happy `hacking` !
 
-- XQT
-
-*El Otoño de La Mariposa*
-
-October 2020
+- XQT,  `El Otoño de La Mariposa` (October 2020)
