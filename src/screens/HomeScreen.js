@@ -34,6 +34,11 @@ const HomeScreen = (props) => {
         <Text style={styles.touchStyle}>Go there</Text>
         <Text style={styles.touchStyle}>Go there</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=>{props.navigation.navigate('SquareReducer')}}>
+        <Text style={styles.touchStyle}>Go to Changing Square W Reducer</Text>
+        <Text style={styles.touchStyle}>Go there</Text>
+        <Text style={styles.touchStyle}>Go there</Text>
+      </TouchableOpacity>
     </View>
   )
 };
